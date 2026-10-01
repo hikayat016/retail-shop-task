@@ -1,0 +1,25 @@
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.fvm/
+build/
+coverage/
+READMEFIRST/builds/
+
+# Android local configuration
+android/local.properties
+android/key.properties
+android/**/key.properties
+**/*.jks
+**/*.keystore
+
+# iOS generated and local files
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# IDE files
+.idea/

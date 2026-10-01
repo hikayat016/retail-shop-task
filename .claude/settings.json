@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "skills": [
+    {
+      "name": "flutter-bestinet-core",
+      "path": "skills/flutter-bestinet-core/SKILL.md",
+      "description": "Canonical BESTINET Flutter skill - M3 design + Riverpod/Freezed architecture + AppRoute/PageRouter navigation, MUST/MUST NOT rules and spec map"
+    },
+    {
+      "name": "flutter-mobile-security",
+      "path": "skills/flutter-mobile-security/SKILL.md",
+      "description": "OWASP MASVS v2 + Mobile Top 10 (2024) for layered-MVVM Flutter apps - storage tiers, TLS/pinning, auth & biometrics, capture protection, logging, release gate, quick scan"
+    },
+    {
+      "name": "flutter-add-paginated-list",
+      "path": "skills/flutter-add-paginated-list/SKILL.md",
+      "description": "Paginated, searchable and filterable lists using Riverpod Notifiers, Freezed state, repositories and GenericApiService"
+    },
+    {
+      "name": "flutter-add-form-validation",
+      "path": "skills/flutter-add-form-validation/SKILL.md",
+      "description": "Pure validators, form state, submit validation and reusable M3 input patterns for Riverpod ViewModels"
+    },
+    {
+      "name": "flutter-wire-generic-api-service",
+      "path": "skills/flutter-wire-generic-api-service/SKILL.md",
+      "description": "Repository API wiring with GenericApiService, explicit DTO decoders, ApiException handling and app provider selection"
+    },
+    {
+      "name": "flutter-configure-flavors",
+      "path": "skills/flutter-configure-flavors/SKILL.md",
+      "description": "Environment flavors, runtime app config, base URLs, logging posture, secure-screen flags and flavor documentation"
+    },
+    {
+      "name": "flutter-add-analytics-reporter",
+      "path": "skills/flutter-add-analytics-reporter/SKILL.md",
+      "description": "Privacy-safe analytics reporter, typed events, multiple captors and environment-specific analytics wiring"
+    },
+    {
+      "name": "flutter-setup-localization-bestinet",
+      "path": "skills/flutter-setup-localization-bestinet/SKILL.md",
+      "description": "Localization setup and string workflow adapted to BESTINET app localization, user messages and generated localization patterns"
+    },
+    {
+      "name": "flutter-add-auth-screen",
+      "path": "skills/flutter-add-auth-screen/SKILL.md",
+      "description": "Authentication screens and flows with SessionManager, secure storage, UiEffect navigation and security-first state handling"
+    },
+    {
+      "name": "flutter-add-widget-test",
+      "path": "skills/flutter-add-widget-test/SKILL.md",
+      "description": "Component-level tests with WidgetTester - rendering and interaction"
+    },
+    {
+      "name": "flutter-add-integration-test",
+      "path": "skills/flutter-add-integration-test/SKILL.md",
+      "description": "End-to-end integration tests with the integration_test package"
+    },
+    {
+      "name": "flutter-add-widget-preview",
+      "path": "skills/flutter-add-widget-preview/SKILL.md",
+      "description": "Interactive widget previews via the @Preview annotation"
+    },
+    {
+      "name": "flutter-fix-layout-issues",
+      "path": "skills/flutter-fix-layout-issues/SKILL.md",
+      "description": "Diagnose RenderFlex overflows and unbounded-constraint layout errors"
+    },
+    {
+      "name": "flutter-build-responsive-layout",
+      "path": "skills/flutter-build-responsive-layout/SKILL.md",
+      "description": "Adaptive layouts with LayoutBuilder/MediaQuery across form factors"
+    },
+    {
+      "name": "dart-run-static-analysis",
+      "path": "skills/dart-run-static-analysis/SKILL.md",
+      "description": "Run Dart and Flutter static analysis after focused code changes and diagnose analyzer or lint failures"
+    },
+    {
+      "name": "dart-collect-coverage",
+      "path": "skills/dart-collect-coverage/SKILL.md",
+      "description": "Collect and interpret Dart or Flutter test coverage for ViewModels, repositories, validators and widgets"
+    },
+    {
+      "name": "dart-resolve-package-conflicts",
+      "path": "skills/dart-resolve-package-conflicts/SKILL.md",
+      "description": "Resolve pub dependency solver conflicts, SDK constraints and code generation package compatibility issues"
+    },
+    {
+      "name": "dart-add-unit-test",
+      "path": "skills/dart-add-unit-test/SKILL.md",
+      "description": "Add focused Dart unit tests for utilities, validators, mappers, repositories and Riverpod ViewModels"
+    },
+    {
+      "name": "dart-generate-test-mocks",
+      "path": "skills/dart-generate-test-mocks/SKILL.md",
+      "description": "Create fakes, stubs or mocks for repositories, services, transports, storage and Riverpod provider overrides"
+    },
+    {
+      "name": "dart-use-path-package",
+      "path": "skills/dart-use-path-package/SKILL.md",
+      "description": "Use safe cross-platform path handling for fixtures, generated files, build artifacts and local file workflows"
+    },
+    {
+      "name": "dart-use-doc-examples",
+      "path": "skills/dart-use-doc-examples/SKILL.md",
+      "description": "Add concise Dart doc examples for reusable APIs, validators, repositories, utilities and core code"
+    },
+    {
+      "name": "dart-use-pattern-matching",
+      "path": "skills/dart-use-pattern-matching/SKILL.md",
+      "description": "Dart 3 pattern matching, switch expressions, destructuring, sealed-class exhaustiveness"
+    },
+    {
+      "name": "dart-use-primary-constructors",
+      "path": "skills/dart-use-primary-constructors/SKILL.md",
+      "description": "Dart primary constructors and the new constructor syntax"
+    },
+    {
+      "name": "dart-write-documentation",
+      "path": "skills/dart-write-documentation/SKILL.md",
+      "description": "Effective Dart /// doc-comment rules and formatting"
+    },
+    {
+      "name": "readmefirst",
+      "path": "skills/readmefirst/SKILL.md",
+      "description": "Non-code project information belongs in one READMEFIRST/ folder - index, notes, security baseline, tester notes, builds. Folder contract, index template, build naming, writing rules and verification snippet."
+    }
+  ],
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r \".prompt // empty\" | grep -iqE \"flutter|dart|\\.dart|riverpod|freezed|provider|repository|viewmodel|view model|widget|screen|scaffold|routing|navigation|localization|dio|networking|architecture|\\bdomain\\b|uieffect|theme|theming|colou?r|material ?3|\\bm3\\b|typograph|iconograph|component\" && printf \"%s\" \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"UserPromptSubmit\\\",\\\"additionalContext\\\":\\\"This is Retail Shop. Before adding/modifying Dart/Flutter code or deciding where a file goes, invoke flutter-bestinet-core - it carries both the architecture rules and the M3 design system. ACTUAL stack (do not assume Clean-Architecture-with-dartz): layered MVVM under lib/modules/ (data/ presentation/ optional domain/); Riverpod @riverpod Notifier + Freezed state (@Riverpod(keepAlive:true) only for long-lived infra - session, config, storage, Dio, bootstrappers); repositories return typed DTOs/domain models via GenericApiService verb helpers (get/post/put/delete, getList/postList/...) with an explicit decoder/listDecoder; errors normalize to ApiException (NO Either/Failure/dartz, NO UseCase classes, NO Equatable entities); navigation is AppRoute + PageRouter with TWO tiers - context helpers inside the widget tree, ...Global helpers outside it (no GoRouter, no AppNavigator facade, no AppRoutes string class, no lib/core/routing); one-shot side-effects use the UiEffect framework (lib/core/utils/side_effects/ui_effect + lib/app/ui/ui_effect); M3 role-based theming is the production model - feature widgets read colours/type from context, never AppColors.x or Color(0xFF..). Keep responses focused: prefer targeted snippets over restating the whole file.\\\"}}\" || true",
+            "timeout": 10,
+            "statusMessage": "Loading Flutter architecture rules..."
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r \".prompt // empty\" | grep -iqE \"security|secure|owasp|masvs|pentest|penetration|vulnerab|breach|harden|threat|token|credential|password|biometric|keychain|keystore|encrypt|decrypt|crypto|certificate|pinning|\\\\btls\\\\b|\\\\bssl\\\\b|cleartext|permission|deep ?link|webview|obfuscat|jailbreak|\\\\broot(ed|ing)?\\\\b|screenshot|screen ?capture|backup|signing|\\\\bpdpa\\\\b|act ?854|privacy|\\\\bpii\\\\b|data ?leak\" && printf \"%s\" \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"UserPromptSubmit\\\",\\\"additionalContext\\\":\\\"Security-relevant ask detected. Invoke flutter-mobile-security BEFORE changing storage, networking, auth/session, biometrics, permissions, logging, deep links or release config. It maps OWASP MASVS v2 and Mobile Top 10 (2024) onto this stack (AppStorage vs SecureAppStorage, ApiTransport/DioTransport, SessionManager, ApiException, GlobalLogger) and carries the PR-blocker list, the release gate and the quick scan. Security rules outrank convenience and outrank the architecture skill where they conflict. Findings go in this project's SECURITY_BASELINE.md, not in the skill.\\\"}}\" || true",
+            "timeout": 10,
+            "statusMessage": "Loading mobile security rules..."
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r \".prompt // empty\" | grep -iqE \"readme|read ?me ?first|document|documentation|\\\\bdocs?\\\\b|notes|write ?up|write it up|handover|hand ?off|onboard|changelog|release ?notes|tester|baseline|markdown|\\\\bmd\\\\b file\" && printf \"%s\" \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"UserPromptSubmit\\\",\\\"additionalContext\\\":\\\"Documentation ask detected. Invoke the readmefirst skill BEFORE creating or moving any non-code document. All non-code information lives in a single READMEFIRST/ folder at the repo root (index + notes + security baseline + tester notes + builds/), never loose markdown at the root; the root README stays a short summary that points there. The skill carries the index contract, build naming, and the writing rules - state what is NOT done, edit in place rather than appending a correction, and verify the edit landed.\\\"}}\" || true",
+            "timeout": 10,
+            "statusMessage": "Loading READMEFIRST docs convention..."
+          }
+        ]
+      }
+    ]
+  }
+}
