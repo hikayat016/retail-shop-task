@@ -69,6 +69,12 @@ Typing in the search field waits briefly before applying the query. Submitting i
 
 These preferences are ordinary UI data, not credentials or personal information. SharedPreferences is not encrypted; do not store passwords, tokens, or sensitive user data there.
 
+## App name and launcher icon
+
+The display name is configured per platform. Flutter's Material app title is in `lib/app/app.dart`; Android's launcher label is in `android/app/src/main/AndroidManifest.xml`; iOS uses `CFBundleDisplayName` in `ios/Runner/Info.plist`; and the web title and install name are in `web/index.html` and `web/manifest.json`.
+
+Launcher artwork is also platform-specific: Android density/adaptive assets are under `android/app/src/main/res/`, iOS icons are in `ios/Runner/Assets.xcassets/AppIcon.appiconset/`, and web icons are in `web/icons/` plus `web/favicon.png`. Keep these icon variants in sync when replacing the brand artwork. The Android application ID, iOS bundle identifier, and Dart package name are technical identifiers; changing the visible name does not require changing them.
+
 ## Navigation and theme
 
 The product row asks `PageRouter` to open `AppRoute.productDetail` and passes a typed `ProductModel`. The router creates `ProductDetailView`; it does not pass unparsed JSON or an integer that the screen must use to make another request. The detail screen shows the product images, description, price, rating, and stock.

@@ -8,6 +8,12 @@ build/
 coverage/
 READMEFIRST/builds/
 
+# Generated assistant configuration kept local to each developer
+.agents/
+.claude/
+.github/
+AGENTS.md
+
 # Android local configuration
 android/local.properties
 android/key.properties

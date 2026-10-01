@@ -1,11 +1,11 @@
 {
-    "name": "retail_shop_catalog",
-    "short_name": "retail_shop_catalog",
+    "name": "Product Simulation",
+    "short_name": "Product Simulation",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Browse products in Product Simulation.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

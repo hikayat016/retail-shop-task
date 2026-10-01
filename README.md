@@ -1,6 +1,6 @@
-# Retail Shop Catalogue
+# Product Simulation
 
-A small Flutter product catalogue backed by the public [DummyJSON Products API](https://dummyjson.com/docs/products). It supports product search, infinite scrolling, detail pages, favorites, and recent searches without login.
+Product Simulation is a small Flutter catalogue backed by the public [DummyJSON Products API](https://dummyjson.com/docs/products). It supports product search, infinite scrolling, detail pages, favorites, and recent searches without login.
 
 **State management:** Riverpod code generation with Freezed keeps dependencies explicit and catalogue state immutable, which makes async paging, search resets, and persistence transitions straightforward to test. This follows the attached Flutter architecture template.
 
